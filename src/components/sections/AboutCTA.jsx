@@ -14,10 +14,15 @@ export default function AboutCTA() {
           for their online presence.
         </p>
 
-        <button className="mt-8 bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-500 transition-all flex items-center gap-2 mx-auto">
-          Get Started Now
-          <span className="text-xl">→</span>
-        </button>
+<a 
+  href="https://my.360webhostings.com/register.php" 
+  target="_blank" rel="noopener noreferrer">
+  <button className="mt-8 bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-500 transition-all flex items-center gap-2 mx-auto">
+    Get Started Now
+    <span className="text-xl">→</span>
+  </button>
+</a>
+
       </div>
     </section>
   );
