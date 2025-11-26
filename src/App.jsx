@@ -1,15 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import ScrollingHeader from './components/layout/ScrollingHeader';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
-import Shared from './pages/Shared'
-import Reseller from './pages/Reseller';
-import VPS from './pages/Vps';
-import Features from './pages/Features';
-import Innovation from './pages/Innovation';
-import Benefits from './pages/Benefits';
-import Feedback from './pages/Feedback';
+import About from './pages/About';
 
 export default function App() {
   return (
@@ -18,14 +14,12 @@ export default function App() {
       <ScrollingHeader />
       <Navbar />
       <main>
-        <Home />
-        <Shared/>
-        <Reseller/>
-        <VPS/>
-        <Features/>
-        <Innovation/>
-        <Benefits/>
-        <Feedback/>
+
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+          </Routes>
+
       </main>
       <Footer />
     </div>

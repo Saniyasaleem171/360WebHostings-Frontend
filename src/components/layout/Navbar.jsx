@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import { FaServer, FaUserCog } from "react-icons/fa";
 
@@ -84,9 +85,10 @@ export default function Navbar() {
           >
             Knowledge Base
           </a>
-          <a href="#" className="hover:text-gray-300 transition">
-            About Us
-          </a>
+          <Link to="/about" className="hover:text-gray-300 transition">
+  About Us
+</Link>
+
           <a
             href="https://my.360webhostings.com/index.php?rp=/login"
             target="_blank"
