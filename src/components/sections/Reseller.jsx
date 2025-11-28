@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const plans = [
   {
@@ -97,7 +97,7 @@ const plans = [
     title: "Business",
     price: "RS 13,499.00",
     period: "mo",
-    ribbon: null,
+    ribbon: "Best Seller",
     features: [
       "Unlimited Cpanel Accounts",
       "300 GB SSD (NvMe) Disk Space",
@@ -120,7 +120,7 @@ const plans = [
     title: "Corporate",
     price: "RS 14,699.00",
     period: "mo",
-    ribbon: "Best Seller",
+    ribbon: null,
     features: [
       "Unlimited Cpanel Accounts",
       "Unlimited SSD (NvMe) Disk Space (Upto 600 GB)",
@@ -147,7 +147,16 @@ export default function Reseller() {
   const [direction, setDirection] = useState("");
   const timeoutRef = useRef(null);
 
-  const visibleCount = 3;
+  // const visibleCount = 3;
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+    const cardsToShow = isMobile ? 1 : 3;
+  
+    useEffect(() => {
+    if (isMobile) {
+      setStart(0);
+    }
+  }, [isMobile]);
+
   const len = plans.length;
 
   const next = () => {
@@ -173,7 +182,7 @@ export default function Reseller() {
   };
 
   const getVisible = () => {
-    return Array.from({ length: visibleCount }).map((_, i) => (start + i) % len);
+    return Array.from({ length: cardsToShow }).map((_, i) => (start + i) % len);
   };
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const plans = [
   {
@@ -85,7 +85,7 @@ const plans = [
   {
     title: "Business",
     price: "RS 9,999.00/yr",
-    ribbon: null, 
+    ribbon: "Best Seller",
     features: [
       "15 Websites",
       "60 GB (Pure SSD) Disk Space",
@@ -106,7 +106,7 @@ const plans = [
   {
   title: "Corporate",
   price: "RS 13,499.00/yr",
-  ribbon: "Best Seller",
+  ribbon: null,
   features: [
     "Unlimited Websites",
     "Unlimited (Pure SSD) Disk Space",
@@ -132,7 +132,16 @@ export default function Shared() {
   const [direction, setDirection] = useState("");
   const timeoutRef = useRef(null);
 
-  const visibleCount = 3;
+  // const visibleCount = 3;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const cardsToShow = isMobile ? 1 : 3;
+
+  useEffect(() => {
+  if (isMobile) {
+    setStart(0);
+  }
+}, [isMobile]);
+
   const len = plans.length;
 
   const next = () => {
@@ -158,7 +167,7 @@ export default function Shared() {
   };
 
   const getVisible = () => {
-    return Array.from({ length: visibleCount }).map((_, i) => (start + i) % len);
+    return Array.from({ length: cardsToShow }).map((_, i) => (start + i) % len);
   };
 
   return (

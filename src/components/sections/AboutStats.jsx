@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutStats() {
   const stats = [
     {
-      number: "5k+",
+      number: "3k+",
       label: "Websites Hosted",
       icon: (
         <svg width="40" height="40" fill="none" stroke="#f1c40f" strokeWidth="2">
@@ -13,7 +13,7 @@ export default function AboutStats() {
       ),
     },
     {
-      number: "50+",
+      number: "10+",
       label: "Countries Served",
       icon: (
         <svg width="40" height="40" fill="none" stroke="#f1c40f" strokeWidth="2">
@@ -23,7 +23,7 @@ export default function AboutStats() {
       ),
     },
     {
-      number: "10k+",
+      number: "8k+",
       label: "Happy Clients",
       icon: (
         <svg width="40" height="40" fill="none" stroke="#f1c40f" strokeWidth="2">

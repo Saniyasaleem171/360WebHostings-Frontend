@@ -9,7 +9,7 @@ export default function Features() {
           Innovations We Deliver
         </h3>
         <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-16">
-          Other Remarkable Projects Built <br /> By “Guest Posts 360 Pvt LTD”
+          More Remarkable Projects Built <br /> By “Guest Posts 360 Pvt LTD”
         </h2>
       </div>
 

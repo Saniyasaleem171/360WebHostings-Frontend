@@ -6,6 +6,8 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
+import Blog from './pages/Blog';
+import FAQ from './pages/FAQ';
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/faq" element={<FAQ />} />
           </Routes>
 
       </main>

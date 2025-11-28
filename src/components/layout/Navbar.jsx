@@ -86,8 +86,8 @@ export default function Navbar() {
             Knowledge Base
           </a>
           <Link to="/about" className="hover:text-gray-300 transition">
-  About Us
-</Link>
+            About Us
+          </Link>
 
           <a
             href="https://my.360webhostings.com/index.php?rp=/login"
@@ -160,21 +160,64 @@ export default function Navbar() {
       {/* MOBILE DROPDOWN */}
       <div className={`md:hidden transition-all duration-300 ${open ? "block" : "hidden"} bg-black`}>
         <nav className="px-4 pt-4 pb-6 space-y-2 flex flex-col">
-          <a href="#" className="px-3 py-2 text-base font-medium hover:text-gray-300">
-            Hosting
-          </a>
-          <a href="#" className="px-3 py-2 text-base font-medium hover:text-gray-300">
-            Domains
-          </a>
-          <a href="#" className="px-3 py-2 text-base font-medium hover:text-gray-300">
-            Knowledge Base
-          </a>
-          <a href="#" className="px-3 py-2 text-base font-medium hover:text-gray-300">
-            About Us
-          </a>
-          <a href="#" className="px-3 py-2 text-base font-medium hover:text-gray-300">
-            Affiliate Programs
-          </a>
+              {/* Hosting Section (no dropdown for mobile) */}
+    <div className="flex flex-col bg-gray-900 rounded-lg overflow-hidden">
+      <span className="px-3 py-2 text-base font-medium text-gray-300">
+        Hosting
+      </span>
+
+      <a
+        href="https://my.360webhostings.com/index.php?rp=/store/shared-hosting"
+        target="_blank"
+        className="px-5 py-2 text-sm text-gray-300 hover:text-white"
+      >
+        Shared Hosting
+      </a>
+
+      <a
+        href="https://my.360webhostings.com/index.php?rp=/store/reseller-hosting"
+        target="_blank"
+        className="px-5 py-2 text-sm text-gray-300 hover:text-white"
+      >
+        Reseller Hosting
+      </a>
+    </div>
+
+    {/* Domains */}
+    <a
+      href="https://my.360webhostings.com/cart.php?a=add&domain=register"
+      target="_blank"
+      className="px-3 py-2 text-base font-medium hover:text-gray-300"
+    >
+      Domains
+    </a>
+
+    {/* Knowledge Base */}
+    <a
+      href="https://my.360webhostings.com/index.php?rp=/knowledgebase"
+      target="_blank"
+      className="px-3 py-2 text-base font-medium hover:text-gray-300"
+    >
+      Knowledge Base
+    </a>
+
+    {/* About (React Router Link) */}
+    <Link
+      to="/about"
+      className="px-3 py-2 text-base font-medium hover:text-gray-300"
+    >
+      About Us
+    </Link>
+
+    {/* Affiliate Programs */}
+    <a
+      href="https://my.360webhostings.com/index.php?rp=/login"
+      target="_blank"
+      className="px-3 py-2 text-base font-medium hover:text-gray-300"
+    >
+      Affiliate Programs
+    </a>
+
 
           {/* Mobile Buttons */}
 <div className="pt-3 flex gap-3">

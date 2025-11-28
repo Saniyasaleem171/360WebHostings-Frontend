@@ -89,15 +89,38 @@ export default function Footer() {
                   Domains
                 </a>
               </li>
-              <li>About Us</li>
-              <li>Blogs</li>
+<li>
+  <a 
+    href="/about"
+    className="hover:underline"
+  >
+    About Us
+  </a>
+</li>
+
+<li>
+  <a 
+    href="/blog"
+    className="hover:underline"
+  >
+    Blogs
+  </a>
+</li>
             </ul>
           </div>
 
           <div className="min-w-[120px]">
             <h3 className="font-semibold mt-3 mb-3 text-2xl">Support</h3>
             <ul className="space-y-1 text-gray-300">
-              <li>FAQs</li>
+<li>
+  <a 
+    href="/faq"
+    className="hover:underline"
+  >
+    FAQs
+  </a>
+</li>
+
 
               <li>
                 <a 
@@ -200,55 +223,60 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-4 flex w-full justify-between gap-10">
-          <p className="text-gray-300 text-xl font-semibold pt-6">Payment Methods:</p>
-          
-          {/* <div className="flex w-full justify-between gap-10"> */}
+        <div className="mt-4 flex w-full justify-between gap-10 
+                max-sm:flex-col max-sm:gap-6">
 
-            <div className="w-1/2">
-              <p className="text-gray-500 font-semibold mt-4 mb-2">For Pakistani Clients:</p>
+  <p className="text-gray-300 text-xl font-semibold pt-6 
+                max-sm:pt-2 max-sm:text-lg">
+    Payment Methods:
+  </p>
 
-              <div className="flex gap-4 flex-wrap">
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/mastercard.jfif" className="h-8 object-contain" />
-                </div>
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/visa.jfif" className="h-8 object-contain" />
-                </div>
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/easypaisa.jpg" className="h-8 object-contain" />
-                </div>
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/jazzcash.jpeg" className="h-8 object-contain" />
-                </div>
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/zindagi.png" className="h-8 object-contain" />
-                </div>
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/QR.PNG" className="h-8 object-contain" />
-                </div>
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/bank.PNG" className="h-8 object-contain" />
-                </div>
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/international.PNG" className="h-8 object-contain" />
-                </div>
-              </div>
-            </div>
-            <div className="w-1/2">
-              <p className="text-gray-500 font-semibold text-l mt-4 mb-2">For International Clients:</p>
-           
-              <div className="flex gap-4 flex-wrap">
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/mastercard.jfif" className="h-8 object-contain" />
-                </div>
-                <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-                  <img src="/cards/visa.jfif" className="h-8 object-contain" />
-                </div>
-              </div>
-            </div>
-          {/* </div> */}
-        </div>
+  <div className="w-1/2 max-sm:w-full">
+    <p className="text-gray-500 font-semibold mt-4 mb-2">For Pakistani Clients:</p>
+
+    <div className="flex gap-4 flex-wrap">
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/mastercard.jfif" className="w-full h-full object-cover " />
+      </div>
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/visa.jfif" className="w-full h-full object-cover" />
+      </div>
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/easypaisa.PNG" className="w-full h-full object-cover " />
+      </div>
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/jazzcash.PNG" className="w-full h-full object-cover " />
+      </div>
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/zindagi.png" className="w-full h-full object-cover " />
+      </div>
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/QR.PNG" className="w-full h-full object-cover " />
+      </div>
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/bank.PNG" className="w-full h-full object-cover " />
+      </div>
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/international.PNG" className="w-full h-full object-cover " />
+      </div>
+    </div>
+  </div>
+
+  <div className="w-1/2 max-sm:w-full">
+    <p className="text-gray-500 font-semibold text-l mt-4 mb-2">For International Clients:</p>
+
+    <div className="flex gap-4 flex-wrap">
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/mastercard.jfif" className="w-full h-full object-cover " />
+      </div>
+      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+        <img src="/cards/visa.jfif" className="w-full h-full object-cover " />
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
         <div className="h-px w-full bg-white/20 my-5"></div>
 
@@ -270,25 +298,29 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* copyright div */}
-          <div className="-mt-3 -ml-14">
+          <div className="-mt-3 -ml-14 max-sm:ml-0 max-sm:mt-4 max-sm:flex max-sm:justify-center">
 
-            <p className="text-sm text-gray-500 text-center md:text-center">
-              © {new Date().getFullYear()} 360 Web Hostings. All Rights Reserved.
-                <br />
-              Project Developed By{" "}
-              <a
-                href="https://tech.guestposts360.com/"   // <-- put your actual URL here
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-600 hover:underline"
-              >
-                Guest Posts 360 Technologies
-              </a>
-              . An in-house product.
-            </p>
+  <p className="text-sm text-gray-500 text-center md:text-center 
+                max-sm:text-center max-sm:px-4">
 
-          </div>
+    © {new Date().getFullYear()} 360 Web Hostings. All Rights Reserved.
+    <br />
+
+    Built & Designed by the TEAM of{" "}
+    <a
+      href="https://tech.guestposts360.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-green-600 hover:underline"
+    >
+      Guest Posts 360 Pvt Ltd
+    </a>
+     . (Own product).
+
+  </p>
+
+</div>
+
 
           <div></div>
 
