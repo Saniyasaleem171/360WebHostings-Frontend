@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import FAQ from './pages/FAQ';
+import Legal from './pages/Legal';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
               <Route path="/about" element={<About />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/legal" element={<Legal />} />
           </Routes>
 
       </main>

@@ -171,7 +171,14 @@ export default function Footer() {
           <div className="min-w-[120px]">
             <h3 className="font-semibold mt-3 mb-3 text-2xl">Legal</h3>
             <ul className="space-y-1 text-gray-300">
-              <li>Legal Team</li>
+<li>
+  <a 
+    href="/legal"
+    className="hover:underline"
+  >
+    Legal Teams
+  </a>
+</li>
               <li>
                 <a
                   href="https://360webhostings.com/terms_policy"
