@@ -90,7 +90,7 @@ export default function Navbar() {
           </Link>
 
           <a
-            href="https://my.360webhostings.com/index.php?rp=/login"
+            href="https://my.360webhostings.com/affiliates.php"
             target="_blank"
             className="hover:text-gray-300 transition"
           >
@@ -211,7 +211,7 @@ export default function Navbar() {
 
     {/* Affiliate Programs */}
     <a
-      href="https://my.360webhostings.com/index.php?rp=/login"
+      href="https://my.360webhostings.com/affiliates.php"
       target="_blank"
       className="px-3 py-2 text-base font-medium hover:text-gray-300"
     >

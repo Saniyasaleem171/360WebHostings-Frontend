@@ -124,7 +124,7 @@ export default function Footer() {
 
               <li>
                 <a 
-                  href="https://my.360webhostings.com/index.php?rp=/login" 
+                  href="https://my.360webhostings.com/submitticket.php" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:underline"

@@ -3,22 +3,18 @@ import React, { useState, useRef, useEffect } from "react";
 const plans = [
   {
     title: "Startup",
-    price: "RS 3,999.00",
-    period: "mo",
-    ribbon: "Best Choice",
+    price: "RS 1699.00/yr",
+    ribbon: "Best Choice", // ribbon visible
     features: [
       "50 Cpanel Accounts",
-      "50 GB SSD (NvMe) Disk Space",
+      "50 GB Disk Space",
       "1 WHM Access",
+      "Free WHMCS Included",
       "Unlimited Websites",
-      "Free Whrmcs",
       "Unlimited Bandwidth",
+      "Free Whmcs",
       "Free SSL Certificates",
-      "Unlimited Business Emails",
-      "Unlimited FTP Accounts",
-      "Unlimited Sub Domains",
       "One Click Softaculous App",
-      "24/7 Hours Customer Support",
       "99.99% Service Uptime",
       "Monthly Cycle",
       "No Minimum Contract",
