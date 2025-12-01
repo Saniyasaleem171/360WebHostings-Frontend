@@ -15,11 +15,13 @@ export default function Navbar() {
 
           {/* Logo + Text */}
           <div className="flex flex-col items-start">
-            <img
-              src="/images/logo.png"
-              className="h-10 object-contain block  ml-9"
-              alt="logo"
-            />
+            <Link to="/">
+  <img
+    src="/images/logo.png"
+    className="h-10 object-contain block ml-9"
+    alt="logo"
+  />
+</Link>
             <h2 className="text-sm font-semibold mt-1 tracking-wide">
               360 WEB HOSTINGS
             </h2>
