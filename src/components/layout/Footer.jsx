@@ -242,30 +242,28 @@ export default function Footer() {
     <p className="text-gray-500 font-semibold mt-4 mb-2">For Pakistani Clients:</p>
 
     <div className="flex gap-4 flex-wrap">
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-        <img src="/cards/mastercard.jfif" className="w-full h-full object-cover " />
+      <div className="h-10 w-10 bg-white rounded-full shadow flex items-center justify-center p-1">
+        <img src="/cards/mastercard.png" className="w-full h-full object-cover " />
       </div>
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-        <img src="/cards/visa.jfif" className="w-full h-full object-cover" />
+      <div className="h-10 w-10 bg-white rounded-full shadow flex items-center justify-center pt-3 pb-2 pl-1 pr-1">
+        <img src="/cards/visa.png" className="w-full h-full object-cover" />
       </div>
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-        <img src="/cards/easypaisa.PNG" className="w-full h-full object-cover " />
+      <div className="h-10 w-10 bg-white rounded-full shadow flex items-center justify-center pt-1 pb-1 pl-1 pr-1">
+        <img src="/cards/easypaisa.png" className="w-full h-full object-cover " />
       </div>
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-        <img src="/cards/jazzcash.PNG" className="w-full h-full object-cover " />
+      <div className="h-10 w-10 bg-white rounded-full shadow flex items-center justify-center p-1">
+        <img src="/cards/jazzcash.png" className="w-full h-full object-cover " />
       </div>
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
+      <div className="h-10 w-10 bg-white rounded-full shadow flex items-center justify-center pt-1 pb-1 pl-2 pr-2">
         <img src="/cards/zindagi.png" className="w-full h-full object-cover " />
       </div>
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-        <img src="/cards/QR.PNG" className="w-full h-full object-cover " />
+      <div className="h-10 w-10 bg-white rounded-full shadow flex items-center justify-center p-1">
+        <img src="/cards/qr.png" className="w-full h-full object-cover " />
       </div>
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-        <img src="/cards/bank.PNG" className="w-full h-full object-cover " />
+      <div className="h-10 w-10 bg-white rounded-full shadow flex items-center justify-center p-1">
+        <img src="/cards/bank.png" className="w-full h-full object-cover " />
       </div>
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-        <img src="/cards/international.PNG" className="w-full h-full object-cover " />
-      </div>
+
     </div>
   </div>
 
@@ -273,11 +271,11 @@ export default function Footer() {
     <p className="text-gray-500 font-semibold text-l mt-4 mb-2">For International Clients:</p>
 
     <div className="flex gap-4 flex-wrap">
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-        <img src="/cards/mastercard.jfif" className="w-full h-full object-cover " />
+      <div className="h-10 w-10 bg-white rounded-full shadow flex items-center justify-center p-1">
+        <img src="/cards/mastercard.png" className="w-full h-full object-cover " />
       </div>
-      <div className="h-10 w-10 bg-white rounded-2xl shadow flex items-center justify-center p-2">
-        <img src="/cards/visa.jfif" className="w-full h-full object-cover " />
+      <div className="h-10 w-10 bg-white rounded-full shadow flex items-center justify-center pt-3 pb-2 pl-1 pr-1">
+        <img src="/cards/visa.png" className="w-full h-full object-cover " />
       </div>
     </div>
   </div>
