@@ -48,7 +48,7 @@ const LegalInquiries = () => {
         </p>
 
         <InquiryItem icon={Mail} label="EMAIL US" value="legal@360webhostings.com" />
-        <InquiryItem icon={MapPin} label="SERVICE OF PROCESS" value="Attn: Legal Dept, 123 Tech City" />
+        <InquiryItem icon={MapPin} label="SERVICE OF PROCESS" value="Faiz Alam Town Opposite Gift University Gujranwala, Pakistan" />
       </div>
     </div>
   );
